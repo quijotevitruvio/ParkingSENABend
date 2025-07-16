@@ -1,0 +1,31 @@
+{
+  "name": "3.conexionbd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/PruebasUsuario.js",
+    "test:usuario": "node test/PruebasUsuario.js",
+    "test:verbose": "node --trace-warnings test/PruebasUsuario.js",
+    "test:save": "node test/PruebasUsuario.js > resultados-pruebas.txt 2>&1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauriciorivero/3.ConexionBD.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mauriciorivero/3.ConexionBD/issues"
+  },
+  "homepage": "https://github.com/mauriciorivero/3.ConexionBD#readme",
+  "description": ""
+}
