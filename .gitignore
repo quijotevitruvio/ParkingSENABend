@@ -1,0 +1,18 @@
+# Fichero de configuración para ignorar archivos en Git
+
+# Ignorar dependencias de Node.js
+# Esta carpeta se regenera con 'npm install'
+node_modules/
+
+# Logs de NPM y Yarn
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivo de entorno
+# ¡NUNCA subas este archivo a un repositorio público o privado!
+.env
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
