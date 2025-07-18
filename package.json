@@ -1,31 +1,53 @@
 {
-  "name": "3.conexionbd",
+  "name": "parking-management-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "API for Parking Management System with manual ORM",
+  "main": "src/server.js",
   "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "build": "echo 'No build step required'",
     "test": "node test/PruebasUsuario.js",
     "test:usuario": "node test/PruebasUsuario.js",
     "test:verbose": "node --trace-warnings test/PruebasUsuario.js",
     "test:save": "node test/PruebasUsuario.js > resultados-pruebas.txt 2>&1",
-    "start": "node server.js"
+    "prestart": "node src/config/checkDbConnection.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "parking",
+    "management",
+    "api",
+    "node.js",
+    "express",
+    "mysql",
+    "orm",
+    "microservices"
+  ],
+  "author": "SENA - Grupo Huber Andres",
+  "license": "MIT",
   "dependencies": {
     "bcrypt": "^6.0.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
+    "express-rate-limit": "^7.5.1",
+    "helmet": "^7.2.0",
+    "morgan": "^1.10.1",
     "mysql2": "^3.14.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mauriciorivero/3.ConexionBD.git"
+    "url": "git+https://github.com/mauriciorivero/ParkingSENABend.git"
   },
   "bugs": {
-    "url": "https://github.com/mauriciorivero/3.ConexionBD/issues"
+    "url": "https://github.com/mauriciorivero/ParkingSENABend/issues"
   },
-  "homepage": "https://github.com/mauriciorivero/3.ConexionBD#readme",
-  "description": ""
+  "homepage": "https://github.com/mauriciorivero/ParkingSENABend#readme"
 }
