@@ -1,4 +1,4 @@
-const DatabaseConnection = require('../DatabaseConnection');
+const DatabaseConnection = require('../config/DatabaseConnection');
 
 class PerfilUsuario {
   constructor(id = null, perfil = null) {
